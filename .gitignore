@@ -1,0 +1,6 @@
+node_modules
+.wrangler
+.dev.vars
+.setup-token
+.secrets.json
+deploy-log.txt

@@ -1,0 +1,5 @@
+# คัดลอกไฟล์นี้เป็น .dev.vars สำหรับทดสอบในเครื่อง (ห้ามอัปโหลดไฟล์ .dev.vars ขึ้น Git)
+SETUP_TOKEN=เปลี่ยนเป็นรหัสลับยาวๆ
+LINE_CHANNEL_ACCESS_TOKEN=
+LINE_CHANNEL_SECRET=
+OMISE_SECRET_KEY=

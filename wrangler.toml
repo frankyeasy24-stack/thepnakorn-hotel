@@ -1,0 +1,14 @@
+# ตั้งค่าโปรเจกต์ Cloudflare Pages ของเว็บไซต์โรงแรมเทพนคร
+# ขั้นตอนเต็มอยู่ใน README.md
+name = "thepnakorn"
+pages_build_output_dir = "./public"
+compatibility_date = "2024-09-23"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "thepnakorn-db"
+database_id = "ใส่-database_id-ที่ได้จากคำสั่ง-d1-create"
+
+[[kv_namespaces]]
+binding = "IMAGES"
+id = "ใส่-id-ที่ได้จากคำสั่ง-kv-namespace-create"
