@@ -6,7 +6,7 @@
   "outputDirectory": "public",
   "functions": { "api/main.js": { "maxDuration": 30 } },
   "rewrites": [
-    { "source": "/api/:path*", "destination": "/api/main?__p=:path*" },
+    { "source": "/api/:__route*", "destination": "/api/main?__p=:__route*" },
     { "source": "/_blob/:id", "destination": "/api/main?__blob=:id" }
   ],
   "headers": [
