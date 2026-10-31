@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm install --omit=dev --no-audit --no-fund",
+  "buildCommand": "",
+  "outputDirectory": "public",
+  "functions": { "api/main.js": { "maxDuration": 30 } },
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/main?__p=:path*" },
+    { "source": "/_blob/:id", "destination": "/api/main?__blob=:id" }
+  ],
+  "headers": [
+    { "source": "/seed-images/(.*)", "headers": [{ "key": "cache-control", "value": "public, max-age=31536000, immutable" }] }
+  ]
+}

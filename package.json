@@ -9,9 +9,13 @@
     "db:init:remote": "wrangler d1 execute thepnakorn-db --remote --file=schema.sql && wrangler d1 execute thepnakorn-db --remote --file=seed/seed.sql",
     "images:local": "node scripts/upload-images.mjs --local",
     "images:remote": "node scripts/upload-images.mjs --remote",
-    "deploy": "npm run build && wrangler pages deploy"
+    "deploy": "npm run build && wrangler pages deploy",
+    "build:vercel": "node scripts/build-page.mjs && node scripts/build-vercel-seed.mjs"
   },
   "devDependencies": {
     "wrangler": "^3.114.17"
+  },
+  "dependencies": {
+    "@vercel/blob": "2.8.2"
   }
 }
